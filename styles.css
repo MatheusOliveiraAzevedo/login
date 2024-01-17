@@ -1,0 +1,195 @@
+@keyframes scale-in {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.container-body {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: linear-gradient(45deg, rgb(240, 160, 31), rgb(246, 176, 63), rgb(243, 205, 144));
+}
+
+.container-title {
+    text-align: center;
+}
+
+.title-page {
+    margin: 0;
+}
+
+.container-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: rgb(94, 104, 116);
+    border-radius: 20px;
+    padding: 30px;
+    color: white;
+}
+
+.container-section {
+    padding-top: 30px;
+}
+
+.container-input {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container-item-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label,
+input {
+    width: 100%;
+}
+
+input {
+    width: auto;
+    padding: 0 10px;
+    border: none;
+    line-height: 40px;
+    border-radius: 4px;
+}
+
+label {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.erro {
+    font-size: 12px;
+    color: rgb(255, 173, 173);
+}
+
+.forget-password {
+    font-size: 14px;
+}
+
+.forget-password:hover {
+    color: rgb(203, 135, 24);
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.button-send {
+    background-color: rgb(240, 160, 31);
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.button-send:hover {
+    background-color: rgb(203, 135, 24);
+    transition: 500ms;
+}
+
+.button-send:active {
+    transform: scale(0.9);
+}
+
+dialog {
+    -webkit-animation: scale-in 0.3s ease;
+    animation: scale-in 0.3s ease;
+    background: linear-gradient(to right, rgb(232, 128, 9), rgb(237, 159, 75));
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 30px;
+}
+
+.title-dialog {
+    text-align: center;
+}
+
+.form-dialog {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.text-dialog {
+    font-size: 14px;
+}
+
+.erroEmailRecover {
+    color: rgb(15, 10, 10);
+}
+
+.labelRecover {
+    font-size: 14px;
+}
+
+.button-close-dialog {
+    border: none;
+    background-color: rgb(109, 109, 169);
+    color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.button-close-dialog:hover {
+    background-color: rgb(94, 94, 172);
+    transition: 500ms;
+}
+
+.button-close-dialog:active {
+    transform: scale(0.9);
+}
+
+.button-cancel {
+    border: none;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 14px;
+    line-height: 10px;
+}
+
+.button-cancel:hover {
+    background-color: rgb(228, 216, 216);
+    transition: 500ms;
+}
+
+.button-cancel:active {
+    transform: scale(0.9);
+}
+
+::backdrop {
+    background-color: black;
+    opacity: 0.80;
+}
+
+@media screen and (max-width: 768px) {
+    .container-form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container-form {
+        width: 80%;
+    }
+}

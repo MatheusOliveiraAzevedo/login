@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Kebook</title>
+</head>
+
+<body class="container-body">
+    <div class="container-form">
+        <div class="container-title">
+            <h1 class="title-page">LOGIN</h1>
+        </div>
+        <section class="container-section">
+            <form action="" class="container-input">
+                <div class="container-item-input">
+                    <label for="email">E-mail</label>
+                    <input name="email" id="email" type="email" placeholder="exemplo@exemplo.com">
+                </div>
+                <div class="erro erroEmail"></div>
+                <div class="container-item-input">
+                    <label for="password">Senha</label>
+                    <input name="password" id="password" type="password" placeholder="Senha">
+                </div>
+                <div class="erro erroPassword"></div>
+                <div>
+                    <span class="forget-password">Esqueci minha senha</span>
+                </div>
+                <input type="submit" value="ENTRAR" class="button-send">
+            </form>
+        </section>
+    </div>
+
+    <dialog class="dialog-container">
+        <h2 class="title-dialog">Recupere sua Senha</h2>
+        <form class="form-dialog">
+            <p class="text-dialog">Para recuperar sua Senha, insira abaixo o seu e-mail utilizado no cadastro.</p>
+            <div class="container-item-input">
+                <label for="emailRecover" class="labelRecover">Insira seu E-mail:</label>
+                <input name="emailRecover" id="emailRecover" type="email" value="" placeholder="exemplo@exemplo.com">
+                <div class="erro erroEmailRecover"></div>
+            </div>
+            <input type="submit" value="OK" class="button-close-dialog"></input>
+            <button type="" class="button-cancel">CANCELAR</button>
+        </form>
+    </dialog>
+</body>
+<script type="module" src="/script.js"></script>
+<script type="module" src="/modal.js"></script>
+</html>
